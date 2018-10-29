@@ -52,6 +52,6 @@ public class Stepdefinition {
 	public void user_verifies_the_recover() {
 		WebElement rA = driver.findElement(By.xpath("//*[@id=\"login_link\"]/div[1]/a"));
 		String rAtext = rA.getText();
-		 Assert.assertEquals("Recover Your Account", rAtext);
+		 Assert.assertEquals("Recover", rAtext);
 	}
 }
