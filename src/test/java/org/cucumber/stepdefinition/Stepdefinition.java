@@ -16,7 +16,7 @@ public class Stepdefinition {
 	
 	@When("^User launch the browser$")
 	public void user_launch_the_browser() {
-		System.setProperty("webdriver.chrome.driver", "E:\\VeniSubha\\Cucumber\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
